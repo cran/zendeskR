@@ -1,4 +1,4 @@
-getOrganizations <- function(){
+getAllOrganizations <- function(){
         curl = getCurlHandle()
         stopPaging <- FALSE
         result <- list()

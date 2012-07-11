@@ -1,11 +1,11 @@
-\name{getTickets}
-\alias{getTickets}
-\title{ getTickets}
+\name{getTicketsForOrganization}
+\alias{getTicketsForOrganization}
+\title{ getTicketsForOrganization}
 \description{
 This function is used to return all tickets for a given Zendesk organization
 }
 \usage{
-getTickets(org.id)
+getTicketsForOrganization(org.id)
 }
 \arguments{
 	\item{org.id}{
@@ -26,6 +26,6 @@ http://developer.zendesk.com/documentation/rest_api/tickets.html
 \examples{
 \dontrun{
     ## This requires Zendesk authentication
-    tickets <- getTickets(org.id)
+    tickets <- getTicketsForOrganization(org.id)
 }}
-\keyword{ getTickets }
+\keyword{ getTicketsForOrganization }

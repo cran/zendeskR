@@ -1,6 +1,6 @@
 \name{getAllUsers}
 \alias{getAllUsers}
-\title{ getAllUsers}
+\title{getAllUsers}
 \description{
 This function is used to retrieve information on all registered Zendesk users in your organization
 }
@@ -21,6 +21,7 @@ http://developer.zendesk.com/documentation/rest_api/users.html
 \examples{
 \dontrun{
     ## This requires Zendesk authentication
+    zendesk('username', 'password', 'https://help.example.com')
     users <- getAllUsers()
 }}
 \keyword{ getAllUsers }

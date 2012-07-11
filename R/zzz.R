@@ -7,10 +7,11 @@
         	username <- NULL,
         	password <- NULL,
         	url <- NULL,
-		users = "/api/v2/users.json",
-		tickets = "/api/v2/tickets.json",
-		audits = "/audits.json",
-		organizations = "/api/v2/organizations.json"
+		      users = "/api/v2/users.json",
+		      tickets = "/api/v2/tickets.json",
+		      audits = "/audits.json",
+		      organizations = "/api/v2/organizations.json",
+		      ticket_metrics = "/api/v2/ticket_metrics.json"
 		
             )
     }
@@ -28,6 +29,9 @@ function(dataframe){
 		if(length(unlist(dataframe[,i])) == n){
 			dataframe[,i] <- unlist(dataframe[,i])
 		} 
+		if(length(unlist(dataframe[,i])) < n){
+			dataframe[,i] <- as.character(dataframe[,i])
+		}
 	}
 
 	return (dataframe)

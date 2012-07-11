@@ -1,4 +1,4 @@
-getTickets <- function(org.id){
+getTicketsForOrganization <- function(org.id){
         curl = getCurlHandle()
         stopPaging <- FALSE
         result <- list()
