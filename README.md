@@ -16,7 +16,23 @@ Current API calls supported
 This package is a work in progress. It started out as a useful utility for myself. 
 I will be adding more functionality and API calls over time. If there is a particular function you would like to see added, please do not hesitate to contact me. 
 
-<i>Last Update: 7-11-2012</i>
+<i>Last Update: 7-17-2012</i>
+
+Installation
+---------
+To install from CRAN, type in an R console:
+
+    > install.packages("zendeskR", dependencies=TRUE)
+
+To install this package from the source code available here, download it, and set your R working directory to wherever you saved the file. Then run:
+
+    > install.packages("zendeskR_0.1.tar.gz", repos=NULL, type="source")
+
+Example Usage
+------- 
+    ## Initiate a Zendesk API session
+    zendesk("username", "password", "https://help.basho.com") ## Your Zendesk credentials and organization URL
+    users <- getAllUsers()
 
 Contact
 ------------
